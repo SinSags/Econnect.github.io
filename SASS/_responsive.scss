@@ -1,0 +1,147 @@
+/* Diseño Responsive */
+
+@media screen and (max-width: 800px) {
+    :root {
+        --boton-padding: 18px 40px;
+    }
+
+    .nav {
+        justify-content: space-around;
+    }
+
+    .nav_items {
+        font-weight: 400;
+        border-bottom: 1px solid $color-blanco;
+        margin-right: 0;
+    }
+
+    .nav_items--cta,
+    .nav_items--footer {
+        border: none;
+    }
+
+    .hero_texts {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .hero_title {
+        font-size: 2.5rem;
+    }
+
+    .hero_subtitle {
+        font-size: 1.5rem;
+    }
+
+    /* About */
+
+    .presentation_copy {
+        width: 100%;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+
+        &.container {
+            padding-top: 30px;
+        }
+    }
+
+    .about_img--left {
+        text-align: center;
+    }
+
+    .about_texts:last-child {
+        grid-row: 3/4;
+    }
+
+    /* Nuestros Proyectos*/
+
+    .projects_grid {
+        grid-template-areas: "img1 img1 img2 img2" "img1 img1 img3 img3" "img4 img4 img5 img5";
+    }
+
+    /* Testimony */
+
+    .testimony_grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Footer */
+
+    .footer_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_contact {
+        grid-row: 1/2;
+    }
+
+    @media screen and (max-width: 500px) {
+        :root {
+            --boton-padding: 18px 35px;
+        }
+
+        .nav {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 10px;
+        }
+
+        .nav_items {
+            padding: 0 10px;
+            border: 0;
+        }
+
+        .hero_texts {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .hero_title {
+            font-size: 2rem;
+        }
+
+        /* About */
+
+        .presentation_picture {
+            width: 120px;
+            height: 120px;
+        }
+
+        .about {
+            row-gap: 60px;
+
+            &.container {
+                padding-top: 10px;
+            }
+        }
+
+        /* Nuestros Proyectos */
+
+        .projects_grid {
+            grid-template-areas: "img1" "img2" "img3" "img4" "img5";
+            height: auto;
+            grid-template-rows: repeat(5, 250px);
+            grid-auto-rows: 250px;
+            gap: 10px;
+        }
+
+        .testimony_item {
+            padding: 30px 15px;
+        }
+
+        .testimony_person {
+            flex-direction: column;
+        }
+
+        .testimony_texts {
+            text-align: center;
+        }
+
+        .testimony_img {
+            margin-bottom: 20px;
+        }
+    }
+}

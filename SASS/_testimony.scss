@@ -1,0 +1,50 @@
+/* Seccion Testimony */
+
+.testimony_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.testimony_item {
+    width: 95%;
+    margin: auto;
+    background: var(--color-secondary);
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 0.5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: $color-blanco;
+    margin-bottom: 50px;
+}
+
+.testimony_img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid $color-blanco;
+    margin-right: 30px;
+}
+
+.testimony_person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimony_name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimony_verification {
+    color: $color-negro;
+    font-weight: 700;
+}
+
+.testimony_review {
+    font-weight: 300;
+}

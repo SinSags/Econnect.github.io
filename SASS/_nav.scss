@@ -1,0 +1,30 @@
+/* nav */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav--footer {
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav_items {
+    color: $color-blanco;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav_items--cta {
+    border: 1px solid $color-blanco;
+}
+
+.nav_items--footer {
+    padding: 10px;
+}

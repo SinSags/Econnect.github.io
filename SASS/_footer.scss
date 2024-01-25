@@ -1,0 +1,45 @@
+/* Seccion Footer */
+
+.footer {
+    background: var(--color-primary);
+}
+
+.footer_grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer_title {
+    font-weight: 400;
+    color: $color-blanco;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_container-icons {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: $color-blanco;
+    text-align: center;
+    border: 1px solid $color-blanco;
+    border-radius: 50px;
+}
+
+.footer_icon {
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.fab.footer_icon {
+    line-height: 60px;
+}
